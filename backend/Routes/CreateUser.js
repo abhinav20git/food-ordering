@@ -6,10 +6,10 @@ router.post("/creatuser", async(req,res)=>{
 
     try {
        await User.create({
-            name: "Ram",
-            password: "123456",
-            email: "Ramdas@hotmail.com",
-            location:"qwerty dedafas"
+            name: req.body.name,
+            password: req.body.password,
+            email: req.body.email,
+            location:req.body.location
         })
         res.json({success:true});
     } catch (error) {

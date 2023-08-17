@@ -21,6 +21,9 @@ export default function Navbar() {
                       <li className="nav-item">
                         <Link className="nav-link active fst-italic" to="/login">Login</Link>
                       </li>
+                      <li className="nav-item">
+                        <Link className="nav-link active fst-italic" to="/creatuser">SignUp</Link>
+                      </li>
                       
                   </ul>
               </div>

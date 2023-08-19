@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Link, useNavigate } from 'react-router-dom';
 import Logo from './Logo2.png';
-
+import Badge from 'react-bootstrap/Badge';
 
 export default function Navbar() {
 
@@ -43,7 +43,8 @@ export default function Navbar() {
               :
               <div>
                 <div className='btn bg-white text-black mx-2'>
-                  My Cart
+                  My Cart {" "}
+                  <Badge pill bg="danger">2</Badge>
                 </div>
 
                 <div className='btn bg-black text-white mx-2' onClick={handleLogout}>

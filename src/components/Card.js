@@ -11,19 +11,19 @@ export default function Card(props) {
         <div>
             <div>
                 <div className="card mt-3" style={{ "width": "18rem", "maxHeight": "360px" }}>
-                    <img src={props.imgSrc} className="card-img-top" alt="pizza" />
+                    <img src={props.imgSrc} className="card-img-top" alt="pizza" style={{height:"180px", objectFit:"fill"}}/>
                     <div className="card-body">
                         <h5 className="card-title">{props.foodName}</h5>
                         <p className="card-text">Some quick example text.</p>
                         <div className="container w-100">
-                            <select className='m-2 h-100 bg-success rounded'>
+                            <select className='m-2 h-100 bg-black rounded'>
                                 {Array.from(Array(6), (e, i) => {
                                     return (
                                         <option key={i + 1} value={i + 1}>{i + 1}</option>
                                     )
                                 })}
                             </select>
-                            <select className='m-2 h-100 bg-success rounded'>
+                            <select className='m-2 h-100 bg-black rounded'>
                                {priceOptions.map((data)=>{
                                     return <option key = {data} value={data}>{data}</option>
                                })}

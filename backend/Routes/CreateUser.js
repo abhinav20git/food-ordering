@@ -2,9 +2,9 @@ const express = require('express');
 const router = express.Router();
 const User = require('../models/User');
 const { body, validationResult } = require('express-validator');
-
+const jwt = require("jsonwebtoken");
 const bcrypt =  require("bcryptjs");
-
+const jswtSecret = "MynameIsUmeshKumarAndIMadeThisSite#$%"
 
 router.post("/creatuser", [
     body('email').isEmail(),
@@ -52,10 +52,19 @@ router.post("/loginuser", [
             if (!userData) {
                 return res.status(400).json({ errors: "Try logging in with correct Email" })
             }
-            if (req.body.password !== userData.password) {
+
+            const pwdCompare =await bcrypt.compare(req.body.password, userData.password);
+            if (!pwdCompare) {
                 return res.status(400).json({ errors: "Try logging in with correct Password" })
             }
-            return res.json({ success: true })
+
+            const data = {
+                user:{
+                    id:userData.id
+                }
+            }
+            const authToken = jwt.sign(data, jswtSecret)
+            return res.json({ success: true, authToken:authToken })
 
         } catch (error) {
             console.log(error)

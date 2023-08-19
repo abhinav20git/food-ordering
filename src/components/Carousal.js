@@ -12,14 +12,17 @@ export default function Carousal() {
                         </form>
                     </div>
                     <div className="carousel-item active">
-                        <img src="https://source.unsplash.com/random/100×100/?burger" className="d-block w-100 h-50"style={{filter:"brightness(30%)"}} alt="burger" />
+                        <img src="https://images.unsplash.com/photo-1571091655789-405eb7a3a3a8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGJ1cmdlcnxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80" className="d-block w-100 h-50"style={{filter:"brightness(30%)"}} alt="burger" />
                     </div>
                     <div className="carousel-item">
-                        <img src="https://source.unsplash.com/random/100×100/?pizza" className="d-block w-100 h-50"style={{filter:"brightness(30%)"}} alt="pizza" />
+                        <img src="https://cdn.pixabay.com/photo/2020/05/17/04/22/pizza-5179939_640.jpg" className="d-block w-100 h-50"style={{filter:"brightness(30%)"}} alt="pizza" />
                     </div>
                     <div className="carousel-item">
-                        <img src="https://source.unsplash.com/random/100×100/?pasta" className="d-block w-100 h-50"style={{filter:"brightness(30%)"}} alt="pasta" />
+                        <img src="https://images.alphacoders.com/130/1308370.jpg" className="d-block w-100 h-50"style={{filter:"brightness(30%)"}} alt="pasta" />
                     </div>
+                   
+                    
+                   
                 </div>
                 <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
                     <span className="carousel-control-prev-icon" aria-hidden="true"></span>

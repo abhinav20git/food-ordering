@@ -14,7 +14,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 
 
-
+This project is a MERN stack project in which data is being fetched from mongodb servers. Moreover, JWT security is also implemented, further user can register/login into this website and his id and password are protected in the database via bcrypt encryptions. 
 
 
 

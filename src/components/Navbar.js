@@ -47,11 +47,11 @@ export default function Navbar() {
               </div>
               :
               <div>
-                <div className='btn bg-white text-black mx-2' onClick={()=> {setCartView(true)}}>
+                <div className='btn bg-white text-black mx-2' onClick={() => { setCartView(true) }}>
                   My Cart {" "}
                   <Badge pill bg="danger">{data.length}</Badge>
                 </div>
-{cartView? <Modal onClose={()=>{setCartView(false)}}><Cart/></Modal>:null}
+                {cartView ? <Modal onClose={() => { setCartView(false) }}><Cart /></Modal> : null}
                 <div className='btn bg-black text-white mx-2' onClick={handleLogout}>
                   Logout
                 </div>

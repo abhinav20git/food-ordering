@@ -63,7 +63,7 @@ export default function Cart() {
                                 <td>{food.size}</td>
                                 <td>{food.price}</td>
                                 <td >
-                                    <button type="button" className='btn bg-black' onClick={() => { dispatch({ type: "REMOVE", index: index }) }}>DEL<button/>
+                                    <button type="button" className='btn bg-black' onClick={() => { dispatch({ type: "REMOVE", index: index }) }}>DEL<button />
                                     </button>
                                 </td>
                             </tr>

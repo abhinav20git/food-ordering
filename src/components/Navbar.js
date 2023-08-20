@@ -33,11 +33,11 @@ export default function Navbar() {
               <li className="nav-item">
                 <Link className="nav-link active fs-5  " aria-current="page" to="/">Home</Link>
               </li>
-              {(localStorage.getItem("authToken")) ?
+              {/* {(localStorage.getItem("authToken")) ?
                 <li className="nav-item">
                   <Link className="nav-link active fs-5 " aria-current="page" to="/">My Orders</Link>
                 </li>
-                : ""}
+                : ""} */}
 
             </ul>
             {(!localStorage.getItem("authToken")) ?

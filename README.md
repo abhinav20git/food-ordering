@@ -9,7 +9,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ![Screenshot (41)](https://github.com/Vargos98/Restaurant-Order/assets/127929058/fd14e16d-14ef-4308-8c0e-f968f786f7ec)
 ![Screenshot (46)](https://github.com/Vargos98/Restaurant-Order/assets/127929058/718d17f1-e69a-490f-84cc-783e697f9ff1)
 ![Screenshot (48)](https://github.com/Vargos98/Restaurant-Order/assets/127929058/5698ba1b-7d29-449d-9e87-c9bc6cb1baa5)
-![Screenshot (44)](https://github.com/Vargos98/Restaurant-Order/assets/127929058/dfa00257-2757-4f12-84ce-010fb891648e)
 ![Screenshot (49)](https://github.com/Vargos98/Restaurant-Order/assets/127929058/6bbb2932-2407-40bf-99ba-733ecb8b9f84)
 
 

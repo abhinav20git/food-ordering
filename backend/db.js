@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const mongoURI = 'mongodb+srv://Fiesta-La-Blanc-menu:9828206Uk@clustermenu.rkgdjtl.mongodb.net/ClusterMenu?retryWrites=true&w=majority'
+const mongoURI = "mongodb://127.0.0.1:27017/resu"
 
 const mongoDB = async () => {
 
